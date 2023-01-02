@@ -14,9 +14,10 @@ nvim_tree.setup({
   disable_netrw = true,
   -- 不显示 git 状态图标
   git = {
-    enable = false,
+    enable = true,
   },
-  -- project plugin 需要这样设置
+  -- project plugin need this option set to true
+  -- but it would jump to subdir on open file sometimes edit rust project
   update_cwd = true,
   update_focused_file = {
     enable = true,
