@@ -18,11 +18,12 @@ nvim_tree.setup({
   },
   -- project plugin need this option set to true
   -- but it would jump to subdir on open file sometimes edit rust project
-  update_cwd = true,
-  update_focused_file = {
-    enable = true,
-    update_cwd = true,
-  },
+
+  -- update_cwd = true,
+  -- update_focused_file = {
+  --   enable = true,
+  --   update_cwd = true,
+  -- },
   filters = {
     -- 隐藏 .文件
     dotfiles = false,
@@ -35,7 +36,7 @@ nvim_tree.setup({
     -- 也可以 'right'
     side = "left",
     -- 隐藏根目录
-    hide_root_folder = false,
+    hide_root_folder = true,
     -- 自定义列表中快捷键
     mappings = {
       -- 只用内置快捷键
