@@ -8,7 +8,7 @@ treesitter.setup({
   -- 安装 language parser
   -- :TSInstallInfo 命令查看支持的语言
   ensure_installed = { "json", "html", "css", "vim", "lua", "javascript", "rust", "cpp", "go",
-                       "cuda", "python", "cmake", "dockerfile", "yaml", "sql", "bash"}},
+                       "cuda", "python", "cmake", "dockerfile", "yaml", "sql", "bash"},
   -- ensure_installed = "maintained",
 
   -- 启用代码高亮模块
