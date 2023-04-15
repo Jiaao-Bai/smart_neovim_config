@@ -136,6 +136,7 @@ packer.startup({
     -- 锁定插件版本在snapshots目录
     snapshot_path = require("packer.util").join_paths(vim.fn.stdpath("config"), "snapshots"),
     -- snapshot = "v20221106", -- before lsp
+    -- auto load at startup 
     snapshot = "v20221113",
 
     -- 最大并发数
