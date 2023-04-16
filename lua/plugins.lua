@@ -3,10 +3,10 @@
 -- ~/.local/share/nvim/site/pack/packer/
 local fn = vim.fn
 local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
-local paccker_bootstrap
+local packer_bootstrap
 if fn.empty(fn.glob(install_path)) > 0 then
   vim.notify("正在安装Pakcer.nvim，请稍后...")
-  paccker_bootstrap = fn.system({
+  packer_bootstrap = fn.system({
     "git",
     "clone",
     "--depth",
@@ -128,16 +128,15 @@ packer.startup({
     -- use("jbyuki/one-small-step-for-vimkind")
 
     use("j-hui/fidget.nvim")
-    if paccker_bootstrap then
+    if packer_bootstrap then
       packer.sync()
     end
   end,
   config = {
     -- 锁定插件版本在snapshots目录
     snapshot_path = require("packer.util").join_paths(vim.fn.stdpath("config"), "snapshots"),
-    -- snapshot = "v20221106", -- before lsp
-    -- auto load at startup 
-    snapshot = "v20221113",
+    -- snapshot = "v20221106", -- before lsp 
+    -- snapshot = "v20221113",
 
     -- 最大并发数
     max_jobs = 16,

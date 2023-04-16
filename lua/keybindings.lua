@@ -46,8 +46,8 @@ map("v", "<C-Down>", "5j", opt)
 map("v", "<C-Up>", "5k", opt)
 -- ctrl u / ctrl + d  只移动9行，默认移动半屏
 -- ctrl u / ctrl + d  只移动9行，默认移动半屏
-map("n", "<C-u>", "10k", opt)
-map("n", "<C-d>", "10j", opt)
+-- map("n", "<C-u>", "10k", opt)
+-- map("n", "<C-d>", "10j", opt)
 
 -- magic search
 map("n", "/", "/\\v", { noremap = true, silent = false })
@@ -83,10 +83,10 @@ map("n", "sc", "<C-w>c", opt)
 -- 关闭其他
 map("n", "so", "<C-w>o", opt) -- close others
 -- shift + hjkl/arrow  窗口之间跳转
-map("n", "<S-h>", "<C-w>h", opt)
-map("n", "<S-j>", "<C-w>j", opt)
-map("n", "<S-k>", "<C-w>k", opt)
-map("n", "<S-l>", "<C-w>l", opt)
+-- map("n", "<S-h>", "<C-w>h", opt)
+-- map("n", "<S-j>", "<C-w>j", opt)
+-- map("n", "<S-k>", "<C-w>k", opt)
+-- map("n", "<S-l>", "<C-w>l", opt)
 map("n", "<S-Left>", "<C-w>h", opt)
 map("n", "<S-Down>", "<C-w>j", opt)
 map("n", "<S-Up>", "<C-w>k", opt)
@@ -118,7 +118,7 @@ map("t", "<leader>l", [[ <C-\><C-N><C-w>l ]], opt)
 local pluginKeys = {}
 
 -- treesitter 折叠
-map("n", "zz", ":foldclose<CR>", opt)
+-- map("n", "zz", ":foldclose<CR>", opt)
 map("n", "Z", ":foldopen<CR>", opt)
 
 -- nvim-tree
