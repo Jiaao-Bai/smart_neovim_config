@@ -134,9 +134,12 @@ packer.startup({
   end,
   config = {
     -- 锁定插件版本在snapshots目录
+    -- sync_plugins
     snapshot_path = require("packer.util").join_paths(vim.fn.stdpath("config"), "snapshots"),
     -- snapshot = "v20221106", -- before lsp 
-    -- snapshot = "v20221113",
+    -- snapshot = "v20221113", 
+    -- 打开注释后，会自动sync到指定snapshot，大概在打开nvim后的5分钟内
+    -- 每次sync都是一堆报错，因为网络环境太差了，轻易不打开
 
     -- 最大并发数
     max_jobs = 16,
@@ -155,6 +158,10 @@ packer.startup({
     -- },
   },
 })
+-- sync_plugins
+-- 打开注释后，会自动sync到指定snapshot，大概在打开nvim后的5分钟内
+-- 每次sync都是一堆报错，因为网络环境太差了，轻易不打开
+-- packer.rollback("v20221113")
 
 -- 每次保存 plugins.lua 自动安装插件
 -- move to autocmds.lua

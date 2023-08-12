@@ -18,12 +18,6 @@ local opt = {
 -- 本地变量
 local map = vim.api.nvim_set_keymap
 
--- $跳到行尾不带空格 (交换$ 和 g_)
-map("v", "$", "g_", opt)
-map("v", "g_", "$", opt)
-map("n", "$", "g_", opt)
-map("n", "g_", "$", opt)
-
 -- 命令行下 Ctrl+j/k  上一个下一个
 map("c", "<C-j>", "<C-n>", { noremap = false })
 map("c", "<C-k>", "<C-p>", { noremap = false })
@@ -101,8 +95,14 @@ map("n", "sk", ":resize -10<CR>", opt)
 map("n", "s=", "<C-w>=", opt)
 
 -- Terminal相关
-map("n", "st", ":sp | terminal<CR>", opt)
-map("n", "stv", ":vsp | terminal<CR>", opt)
+map("n", "<leader>t", ":sp | terminal<CR>", opt)
+map("n", "<leader>vt", ":vsp | terminal<CR>", opt)
+map("t", "<Esc>", "<C-\\><C-n>", opt)
+map("t", "<A-h>", [[ <C-\><C-N><C-w>h ]], opt)
+map("t", "<A-j>", [[ <C-\><C-N><C-w>j ]], opt)
+map("t", "<A-k>", [[ <C-\><C-N><C-w>k ]], opt)
+map("t", "<A-l>", [[ <C-\><C-N><C-w>l ]], opt)
+
 -- Esc 回 Normal 模式
 map("t", "<Esc>", "<C-\\><C-n>", opt)
 map("t", "<A-h>", [[ <C-\><C-N><C-w>h ]], opt)
