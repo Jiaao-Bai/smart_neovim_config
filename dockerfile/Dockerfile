@@ -1,3 +1,5 @@
+# build smart_nvim docker env
+
 #how to build: 
 # do this locally
 # 1. git clone --depth 1 https://github.com/wbthomason/packer.nvim\

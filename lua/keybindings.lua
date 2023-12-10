@@ -71,26 +71,22 @@ map("n", "<leader>q", ":qa!<CR>", opt)
 -- 取消 s 默认功能
 map("n", "s", "", opt)
 map("n", "sv", ":vsp<CR>", opt)
-map("n", "sh", ":sp<CR>", opt)
+map("n", "sp", ":sp<CR>", opt)
 -- 关闭当前
 map("n", "sc", "<C-w>c", opt)
 -- 关闭其他
 map("n", "so", "<C-w>o", opt) -- close others
--- shift + hjkl/arrow  窗口之间跳转
--- map("n", "<S-h>", "<C-w>h", opt)
--- map("n", "<S-j>", "<C-w>j", opt)
--- map("n", "<S-k>", "<C-w>k", opt)
--- map("n", "<S-l>", "<C-w>l", opt)
-map("n", "<S-Left>", "<C-w>h", opt)
-map("n", "<S-Down>", "<C-w>j", opt)
-map("n", "<S-Up>", "<C-w>k", opt)
-map("n", "<S-Right>", "<C-w>l", opt)
+-- s + hjkl 窗口之间跳转
+map("n", "sh", "<C-w>h", opt)
+map("n", "sj", "<C-w>j", opt)
+map("n", "sk", "<C-w>k", opt)
+map("n", "sl", "<C-w>l", opt)
 -- 左右比例控制
 map("n", "s,", ":vertical resize -10<CR>", opt)
 map("n", "s.", ":vertical resize +10<CR>", opt)
 -- 上下比例
-map("n", "sj", ":resize +10<CR>", opt)
-map("n", "sk", ":resize -10<CR>", opt)
+map("n", "su", ":resize +10<CR>", opt)
+map("n", "sd", ":resize -10<CR>", opt)
 -- 相等比例
 map("n", "s=", "<C-w>=", opt)
 
