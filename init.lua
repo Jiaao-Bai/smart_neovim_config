@@ -1,38 +1,17 @@
 -- 基础配置
-require("basic")
+require("config.options")
 -- 快捷键映射
-require("keybindings")
--- Packer插件管理
-require("plugins")
+require("config.keymaps")
 -- 主题设置
-require("colorscheme")
--- -- 自动命令
--- require("autocmds")
+require("config.colorscheme")
+-- Packer插件管理
+require("config.lazy")
 -- -- 插件配置
-require("plugin-config.vscode")
-require("plugin-config.nvim-tree")
-require("plugin-config.bufferline")
-require("plugin-config.lualine")
-require("plugin-config.telescope")
-require("plugin-config.dashboard")
-require("plugin-config.project")
-require("plugin-config.nvim-treesitter")
-require("plugin-config.indent-blankline")
--- require("plugin-config.toggleterm")
--- require("plugin-config.surround")
-require("plugin-config.comment")
-require("plugin-config.nvim-autopairs")
--- require("plugin-config.fidget")
--- -- 内置LSP
-require("lsp.setup")
-require("lsp.cmp")
-require("lsp.ui")
--- -- 格式化
--- -- require("lsp.formatter")
--- require("lsp.null-ls")
--- -- DAP
--- -- require("dap.vimspector")
--- require("dap.nvim-dap")
--- utils
--- 复制到windows剪贴板
--- require('utils.fix-yank')
+-- require("plugin_config.vscode")
+require("plugin_config.nvim-tree")
+-- require("plugin_config.bufferline")
+-- require("plugin_config.lualine")
+-- require("plugin_config.telescope")
+-- require("plugin_config.dashboard")
+-- require("plugin_config.project")
+-- require("plugin_config.comment")
