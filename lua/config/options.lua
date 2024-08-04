@@ -1,3 +1,9 @@
+-- vim.g.{name}: 全局变量
+-- vim.b.{name}: 缓冲区变量
+-- vim.w.{name}: 窗口变量
+-- vim.bo.{option}: buffer-local 选项
+-- vim.wo.{option}: window-local 选项
+
 -- utf8
 vim.g.encoding = "UTF-8"
 vim.o.fileencoding = "utf-8"

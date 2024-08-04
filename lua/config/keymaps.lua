@@ -12,7 +12,7 @@ vim.g.maplocalleader = " "
 
 local opt = {
   noremap = true, -- 键位映射是非递归的
-  silent = true, -- 关闭映射触发时的消息
+  silent = true, -- 关闭映射触发时多余的信息
 }
 
 -- 本地变量
