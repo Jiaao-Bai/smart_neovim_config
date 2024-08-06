@@ -38,4 +38,12 @@ local pluginKeys = {}
 map("n", "<C-m>", ":NvimTreeToggle<CR>", opt)
 map("n", "<leader>m", ":NvimTreeToggle<CR>", opt)
 
+-- bufferline
+-- 左右Tab切换
+map("n", "<S-Tab>", ":BufferLineCyclePrev<CR>", opt)
+map("n", "<Tab>", ":BufferLineCycleNext<CR>", opt)
+-- "moll/vim-bbye" 关闭当前 buffer
+map("n", "<leader>bc", ":Bdelete!<CR>", opt)
+map("n", "<C-w>", ":Bdelete!<CR>", opt)
+
 return pluginKeys

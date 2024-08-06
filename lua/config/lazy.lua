@@ -16,6 +16,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+  -- nvim-tree
   {
     "nvim-tree/nvim-tree.lua",
     version = "*",
@@ -27,6 +28,8 @@ require("lazy").setup({
       require("nvim-tree").setup {}
     end,
   },
+  -- bufferline
+  {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
   -- lualine
   {"nvim-lualine/lualine.nvim", dependencies = { "nvim-tree/nvim-web-devicons" }},
   "arkav/lualine-lsp-progress",
