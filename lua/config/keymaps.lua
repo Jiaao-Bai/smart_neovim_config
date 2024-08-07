@@ -43,7 +43,7 @@ map("n", "<leader>m", ":NvimTreeToggle<CR>", opt)
 map("n", "<S-Tab>", ":BufferLineCyclePrev<CR>", opt)
 map("n", "<Tab>", ":BufferLineCycleNext<CR>", opt)
 -- "moll/vim-bbye" 关闭当前 buffer
-map("n", "<leader>bc", ":Bdelete!<CR>", opt)
-map("n", "<C-w>", ":Bdelete!<CR>", opt)
+-- map("n", "<leader>bc", ":Bdelete!<CR>", opt)
+-- map("n", "<C-w>", ":Bdelete!<CR>", opt)
 
 return pluginKeys
