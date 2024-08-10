@@ -30,6 +30,9 @@ require("lazy").setup({
   },
   -- bufferline
   {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
+  -- vim-bbye
+  {"moll/vim-bbye"},
+
   -- lualine
   {"nvim-lualine/lualine.nvim", dependencies = { "nvim-tree/nvim-web-devicons" }},
   "arkav/lualine-lsp-progress",

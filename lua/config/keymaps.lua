@@ -19,17 +19,12 @@ local opt = {
 local map = vim.api.nvim_set_keymap
 
 map("n", "<leader>w", ":w<CR>", opt)
-map("n", "<leader>wq", ":wqa!<CR>", opt)
 
 -- 上下滚动浏览
 map("n", "<C-j>", "5j", opt)
 map("n", "<C-k>", "5k", opt)
 map("v", "<C-j>", "5j", opt)
 map("v", "<C-k>", "5k", opt)
-map("n", "<C-Down>", "5j", opt)
-map("n", "<C-Up>", "5k", opt)
-map("v", "<C-Down>", "5j", opt)
-map("v", "<C-Up>", "5k", opt)
 
 -- 插件快捷键
 local pluginKeys = {}
@@ -42,8 +37,15 @@ map("n", "<leader>m", ":NvimTreeToggle<CR>", opt)
 -- 左右Tab切换
 map("n", "<S-Tab>", ":BufferLineCyclePrev<CR>", opt)
 map("n", "<Tab>", ":BufferLineCycleNext<CR>", opt)
+-- 关闭左/右侧buffer
+map("n", "<leader>bh", ":BufferLineCloseLeft<CR>", opt)
+map("n", "<leader>bl", ":BufferLineCloseRight<CR>", opt)
+-- 关闭其他buffer
+map("n", "<leader>bo", ":BufferLineCloseRight<CR>:BufferLineCloseLeft<CR>", opt)
+-- 关闭选中buffer
+map("n", "<leader>bp", ":BufferLinePickClose<CR>", opt)
+
 -- "moll/vim-bbye" 关闭当前 buffer
--- map("n", "<leader>bc", ":Bdelete!<CR>", opt)
--- map("n", "<C-w>", ":Bdelete!<CR>", opt)
+map("n", "<leader>q", ":Bdelete!<CR>", opt)
 
 return pluginKeys
