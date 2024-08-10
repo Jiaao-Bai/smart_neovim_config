@@ -16,28 +16,23 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+  -- vscode
+  "Mofiqul/vscode.nvim",
   -- nvim-tree
-  {
-    "nvim-tree/nvim-tree.lua",
-    version = "*",
-    lazy = false,
-    dependencies = {
-      "nvim-tree/nvim-web-devicons",
-    },
+  {"nvim-tree/nvim-tree.lua", version = "*", lazy = false, dependencies = "nvim-tree/nvim-web-devicons",
     config = function()
       require("nvim-tree").setup {}
-    end,
-  },
+    end,},
   -- bufferline
   {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
   -- vim-bbye
   {"moll/vim-bbye"},
-
   -- lualine
   {"nvim-lualine/lualine.nvim", dependencies = { "nvim-tree/nvim-web-devicons" }},
   "arkav/lualine-lsp-progress",
   -- telescope
   {"nvim-telescope/telescope.nvim", dependencies = { "nvim-lua/plenary.nvim" }},
+
   -- telescope extensions
   "LinArcX/telescope-env.nvim",
   "nvim-telescope/telescope-ui-select.nvim",
@@ -46,6 +41,4 @@ require("lazy").setup({
   "glepnir/dashboard-nvim",
   -- Comment
   "numToStr/Comment.nvim",
-  -- vscode
-  "Mofiqul/vscode.nvim",
 })
