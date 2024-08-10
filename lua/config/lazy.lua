@@ -34,9 +34,13 @@ require("lazy").setup({
   {"nvim-telescope/telescope.nvim", dependencies = { "nvim-lua/plenary.nvim" }},
 
   -- Comment
-  "numToStr/Comment.nvim",
+  {"numToStr/Comment.nvim"},
   -- 代码部分
   -- treesitter代码高亮
-  {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate" }
-
+  {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
+  -- lsp
+  -- lsp config
+  {"neovim/nvim-lspconfig"},
+  -- lsp server 管理
+  {"williamboman/mason.nvim"}
 })
