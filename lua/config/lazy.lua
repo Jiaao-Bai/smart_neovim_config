@@ -33,12 +33,10 @@ require("lazy").setup({
   -- telescope
   {"nvim-telescope/telescope.nvim", dependencies = { "nvim-lua/plenary.nvim" }},
 
-  -- telescope extensions
-  "LinArcX/telescope-env.nvim",
-  "nvim-telescope/telescope-ui-select.nvim",
-  "ahmedkhalf/project.nvim",
-  -- dashboard-nvim
-  "glepnir/dashboard-nvim",
   -- Comment
   "numToStr/Comment.nvim",
+  -- 代码部分
+  -- treesitter代码高亮
+  {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate" }
+
 })

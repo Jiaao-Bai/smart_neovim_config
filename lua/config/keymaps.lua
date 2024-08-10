@@ -30,7 +30,6 @@ map("v", "<C-k>", "5k", opt)
 local pluginKeys = {}
 
 -- nvim-tree
-map("n", "<C-m>", ":NvimTreeToggle<CR>", opt)
 map("n", "<leader>m", ":NvimTreeToggle<CR>", opt)
 
 -- bufferline
