@@ -48,8 +48,8 @@ map("n", "<leader>bp", ":BufferLinePickClose<CR>", opt)
 map("n", "<leader>q", ":Bdelete!<CR>", opt)
 
 -- Telescope
-map("n", "<C-p>", ":Telescope find_files<CR>", opt)
-map("n", "<C-f>", ":Telescope live_grep<CR>", opt)
+map("n", "<leader>p", ":Telescope find_files<CR>", opt)
+map("n", "<leader>f", ":Telescope live_grep<CR>", opt)
 -- Telescope 列表中 插入模式快捷键
 pluginKeys.telescopeList = {
   i = {
