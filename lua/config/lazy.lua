@@ -16,7 +16,8 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-  -- vscode
+  -- 界面
+  -- vscode colorscheme
   "Mofiqul/vscode.nvim",
   -- nvim-tree
   {"nvim-tree/nvim-tree.lua", version = "*", lazy = false, dependencies = "nvim-tree/nvim-web-devicons",
@@ -33,9 +34,9 @@ require("lazy").setup({
   -- telescope
   {"nvim-telescope/telescope.nvim", dependencies = { "nvim-lua/plenary.nvim" }},
 
-  -- Comment
-  {"numToStr/Comment.nvim"},
   -- 代码部分
+  -- Comment代码注释
+  {"numToStr/Comment.nvim"},
   -- treesitter代码高亮
   {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
   -- lsp
