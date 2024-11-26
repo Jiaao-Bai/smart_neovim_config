@@ -10,8 +10,8 @@ require("plugin_config.nvim-tree")
 require("plugin_config.bufferline")
 require("plugin_config.lualine")
 require("plugin_config.telescope")
-
 require("plugin_config.comment")
-
 require("plugin_config.nvim-treesitter")
 require("plugin_config.mason")
+require("plugin_config.mason-lspconfig")
+require("plugin_config.lspconfig")

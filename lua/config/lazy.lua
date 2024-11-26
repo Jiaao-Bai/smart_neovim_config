@@ -37,11 +37,16 @@ require("lazy").setup({
   -- 代码部分
   -- Comment代码注释
   {"numToStr/Comment.nvim"},
-  -- treesitter代码高亮
+  -- treesitter代码高亮, 缩进，折叠等
   {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
+
+  -- 包管理器
+  {"williamboman/mason.nvim"},
+
   -- lsp
-  -- lsp config
+  -- nvim-lspconfig补充配置
+  {"williamboman/mason-lspconfig.nvim"},
+  -- nvim内置lsp client对lsp server的官方版配置
   {"neovim/nvim-lspconfig"},
-  -- lsp server 管理
-  {"williamboman/mason.nvim"}
+
 })
