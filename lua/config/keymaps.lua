@@ -26,6 +26,9 @@ map("n", "<C-k>", "5k", opt)
 map("v", "<C-j>", "5j", opt)
 map("v", "<C-k>", "5k", opt)
 
+-- 复制到系统剪切板
+map("v", "<C-y>", "\"+y", opt)
+
 -- 插件快捷键
 local pluginKeys = {}
 
