@@ -50,6 +50,12 @@ map("n", "<leader>bp", ":BufferLinePickClose<CR>", opt)
 -- "moll/vim-bbye" 关闭当前 buffer
 map("n", "<leader>q", ":Bdelete!<CR>", opt)
 
+-- 跳转到定义
+-- map('n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>', { desc = '跳转到声明' })
+map('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', { desc = '跳转到定义' })
+-- map('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', { desc = '跳转到实现' })
+-- map('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', { desc = '查看引用列表' })
+
 -- Telescope
 map("n", "<leader>p", ":Telescope find_files<CR>", opt)
 map("n", "<leader>f", ":Telescope live_grep<CR>", opt)

@@ -4,6 +4,7 @@ require("config.options")
 require("config.keymaps")
 -- Packer插件管理
 require("config.lazy")
+
 -- -- 插件配置
 require("plugin_config.colorscheme")
 require("plugin_config.nvim-tree")
@@ -12,6 +13,11 @@ require("plugin_config.lualine")
 require("plugin_config.telescope")
 require("plugin_config.comment")
 require("plugin_config.nvim-treesitter")
-require("plugin_config.mason")
 require("plugin_config.mason-lspconfig")
-require("plugin_config.lspconfig")
+
+-- -- lsp client配置
+require("lsp_client_config.luals")
+
+
+
+

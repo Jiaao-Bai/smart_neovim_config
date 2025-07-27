@@ -40,13 +40,16 @@ require("lazy").setup({
   -- treesitter代码高亮, 缩进，折叠等
   {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
 
-  -- 包管理器
-  {"williamboman/mason.nvim"},
-
   -- lsp
   -- nvim-lspconfig补充配置
-  {"williamboman/mason-lspconfig.nvim"},
-  -- nvim内置lsp client对lsp server的官方版配置
-  {"neovim/nvim-lspconfig"},
-
+  {
+      "mason-org/mason-lspconfig.nvim",
+      opts = {},
+      dependencies = {
+          -- 包管理器 for lsp server, dap server, etc.
+          { "mason-org/mason.nvim", opts = {} },
+          -- nvim内置lsp client对lsp server的官方版配置
+          "neovim/nvim-lspconfig",
+      },
+  },
 })
