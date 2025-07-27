@@ -17,6 +17,7 @@ require("plugin_config.mason-lspconfig")
 
 -- -- lsp client配置
 require("lsp_client_config.luals")
+require("lsp_client_config.clangd")
 
 
 
