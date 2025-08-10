@@ -13,7 +13,6 @@ require("plugin_config.lualine")
 require("plugin_config.telescope")
 require("plugin_config.comment")
 require("plugin_config.nvim-treesitter")
-require("plugin_config.mason-lspconfig")
 
 -- -- lsp client配置
 require("lsp_client_config.luals")

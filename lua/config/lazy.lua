@@ -41,15 +41,10 @@ require("lazy").setup({
   {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
 
   -- lsp
-  -- nvim-lspconfig补充配置
-  {
-      "mason-org/mason-lspconfig.nvim",
-      opts = {},
-      dependencies = {
-          -- 包管理器 for lsp server, dap server, etc.
-          { "mason-org/mason.nvim", opts = {} },
-          -- nvim内置lsp client对lsp server的官方版配置
-          "neovim/nvim-lspconfig",
-      },
-  },
+  -- 包管理器 for lsp server, dap server, etc.
+  { "mason-org/mason.nvim", opts = {} },
+
+  -- nvim内置lsp client对lsp server的官方版配置
+  -- nvim-lspconfig is a "data only" repo, providing basic, default Nvim LSP client configurations
+  { "neovim/nvim-lspconfig" },
 })
